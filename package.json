@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "Recipe application with custom recipe uploads",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Aditya Ray",
+  "license": "ISC",
+  "dependencies": {
+    "core-js": "^3.37.0",
+    "fractional": "^1.0.0",
+    "parcel": "^2.12.0",
+    "regenerator-runtime": "^0.14.1",
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "process": "^0.11.10"
+  }
+}
