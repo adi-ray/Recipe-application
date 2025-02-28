@@ -1,6 +1,6 @@
 import View from './View.js';
 import icons from 'url:../../img/icons.svg'; 
-import { Fraction } from 'fractional';
+import Fraction from 'fraction.js';
 
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe');
@@ -114,7 +114,7 @@ class RecipeView extends View {
       <svg class="recipe__icon">
         <use href="${icons}#icon-check"></use>
       </svg>
-      <div class="recipe__quantity">${ing.quantity ? new Fraction(ing.quantity).toString() : ''}</div>
+      <div class="recipe__quantity">${ing.quantity ? new Fraction(ing.quantity).toFraction(true).toString() : ''}</div>
       <div class="recipe__description">
         <span class="recipe__unit">${ing.unit}</span>
         ${ing.description}
